@@ -205,7 +205,6 @@ end)
 
 
 UICorner.Parent = ImageButton
-wait(2)
 do
     if game:GetService("CoreGui"):FindFirstChild("2XUi") then
         game:GetService("CoreGui").DinoUI:Destroy()
