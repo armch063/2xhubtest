@@ -9,7 +9,7 @@ local games = {
             " "
                 ..
 
-                        Gamename.. "!" .. " 2XHUB Hub]"  .."\n Loadded Succesfully script by NEW"
+                        Gamename.. "!" .. " 2XHUB]"  .."\n Loadded Succesfully script by NEW | รีตัวเข้าเกาะยังมีบัคนะ"
             )
     end
 }
@@ -205,7 +205,6 @@ end)
 
 
 UICorner.Parent = ImageButton
-wait(2)
 do
     if game:GetService("CoreGui"):FindFirstChild("2XUi") then
         game:GetService("CoreGui").DinoUI:Destroy()
@@ -3061,152 +3060,152 @@ if MyLevel == 10 then
    game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
    wait(0.1)
    game .Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1612.79578, 37.195343, 149.128433, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-   wait(10)
+   wait(5)
 elseif MyLevel == 30 then
- wait(0.10)
+ wait(0.1)
    game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
    wait(0.1)
    game .Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1141.07483, 4.10001802, 3831.5498, 0.965929627, -0, -0.258804798, 0, 1, -0, 0.258804798, 0, 0.965929627)
-   wait(10)
- elseif MyLevel == 63 then
-   wait(0.10)
+   wait(5)
+ elseif MyLevel == 60 then
+   wait(0.1)
    game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
    wait(0.1)
    game .Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(894.488647, 5.14000702, 4392.43359, 0.819155693, -0, -0.573571265, 0, 1, -0, 0.573571265, 0, 0.819155693)
-   wait(10)
-elseif MyLevel == 64 then
-    wait(0.10)
+   wait(5)
+elseif MyLevel == 90 then
+    wait(0.1)
    game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
    wait(0.1)
    game .Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1389.74451, 88.1519318, -1298.90796, -0.342042685, 0, 0.939684391, 0, 1, 0, -0.939684391, 0, -0.342042685)
-   wait(10)
+   wait(5)
  elseif MyLevel == 120 then
-    wait(0.10)
+    wait(0.1)
    game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
    wait(0.1)
    game .Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5039.58643, 27.3500385, 4324.68018, 0, 0, -1, 0, 1, 0, 1, 0, 0)
-   wait(10)
+   wait(5)
   elseif MyLevel == 150 then
-    wait(0.10)
+    wait(0.1)
    game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
    wait(0.1)
    game .Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4839.53027, 716.368591, -2619.44165, 0.866007268, 0, 0.500031412, 0, 1, 0, -0.500031412, 0, 0.866007268)
-   wait(10)
+   wait(5)
   elseif MyLevel == 190 then
-    wait(0.10)
+    wait(0.1)
    game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
    wait(0.1)
    game .Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5308.93115, 1.65517521, 475.120514, -0.0894274712, -5.00292918e-09, -0.995993316, 1.60817859e-09, 1, -5.16744869e-09, 0.995993316, -2.06384709e-09, -0.0894274712)
-   wait(10)
+   wait(5)
   elseif MyLevel == 250 then
-    wait(0.10)
+    wait(0.1)
    game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
    wait(0.1)
    game .Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1580.04663, 6.35000277, -2986.47534, -0.515037298, 0, -0.857167721, 0, 1, 0, 0.857167721, 0, -0.515037298)
-   wait(10)
+   wait(5)
      elseif MyLevel == 300 then
-    wait(0.10)
+    wait(0.1)
    game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
    wait(0.1)
    game .Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5313.37012, 10.9500084, 8515.29395, -0.499959469, 0, 0.866048813, 0, 1, 0, -0.866048813, 0, -0.499959469)
-   wait(10)
+   wait(5)
      elseif MyLevel == 375 then
-    wait(0.10)
+    wait(0.1)
    game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
    wait(0.1)
    game .Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(61122.65234375, 18.497442245483, 1569.3997802734)
-   wait(10)
+   wait(5)
      elseif MyLevel == 450 then
-    wait(0.10)
+    wait(0.1)
    game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
    wait(0.1)
    game .Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4721.88867, 843.874695, -1949.96643, 0.996191859, -0, -0.0871884301, 0, 1, -0, 0.0871884301, 0, 0.996191859)
-   wait(10)
+   wait(5)
      elseif MyLevel == 475 then
-    wait(0.10)
+    wait(0.1)
    game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
    wait(0.1)
    game .Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7859.09814, 5544.19043, -381.476196, -0.422592998, 0, 0.906319618, 0, 1, 0, -0.906319618, 0, -0.422592998)
-   wait(10)
+   wait(5)
      elseif MyLevel == 525 then
-    wait(0.10)
+    wait(0.1)
    game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
    wait(0.1)
    game .Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7906.81592, 5634.6626, -1411.99194, 0, 0, -1, 0, 1, 0, 1, 0, 0)
-   wait(10)
+   wait(5)
      elseif MyLevel == 625 then
-    wait(0.10)
+    wait(0.1)
    game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
    wait(0.1)
    game .Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5259.81982, 37.3500175, 4050.0293, 0.087131381, 0, 0.996196866, 0, 1, 0, -0.996196866, 0, 0.087131381)
-   wait(10)
+   wait(5)
    elseif W2 then
      if MyLevel == 775 then
-    wait(0.10)
+    wait(0.1)
    game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
    wait(0.1)
    game .Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(638.43811, 71.769989, 918.282898, 0.139203906, 0, 0.99026376, 0, 1, 0, -0.99026376, 0, 0.139203906)
-   wait(10)
+   wait(5)
    elseif MyLevel == 875 then
-   wait(0.10)
+   wait(0.1)
    game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
    wait(0.1)
    game .Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(638.43811, 71.769989, 918.282898, 0.139203906, 0, 0.99026376, 0, 1, 0, -0.99026376, 0, 0.139203906)
-   wait(10)
+   wait(5)
    elseif MyLevel == 950 then
-   wait(0.10)
+   wait(0.1)
    game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
    wait(0.1)
    game .Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5497.06152, 47.5923004, -795.237061, -0.29242146, 0, -0.95628953, 0, 1, 0, 0.95628953, 0, -0.29242146)
-   wait(10)
+   wait(5)
    elseif MyLevel == 1000 then
-   wait(0.10)
+   wait(0.1)
    game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
    wait(0.1)
    game .Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(609.858826, 400.119904, -5372.25928, -0.374604106, 0, 0.92718488, 0, 1, 0, -0.92718488, 0, -0.374604106)
-   wait(10)
+   wait(5)
    elseif MyLevel == 1100 then
    wait(0.10)
    game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
    wait(0.1)
    game .Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6064.06885, 15.2422857, -4902.97852, 0.453972578, -0, -0.891015649, 0, 1, -0, 0.891015649, 0, 0.453972578)
-   wait(10)
+   wait(5)
    elseif MyLevel == 1175 then
-   wait(0.10)
+   wait(0.1)
    game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
    wait(0.1)
    game .Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5428.03174, 15.0622921, -5299.43457, -0.882952213, 0, 0.469463557, 0, 1, 0, -0.469463557, 0, -0.882952213)
-   wait(10)
+   wait(5)
    elseif MyLevel == 1250 then
-   wait(0.10)
+   wait(0.1)
    game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
    wait(0.1)
    game .Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1037.80127, 125.092171, 32911.6016)         
-   wait(10)
+   wait(5)
    elseif MyLevel == 1300 then
-   wait(0.10)
+   wait(0.1)
    game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
    wait(0.1)
    game .Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(968.80957, 125.092171, 33244.125)         
-   wait(10)
+   wait(5)
     elseif MyLevel == 1300 then
-   wait(0.10)
+   wait(0.1)
    game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
    wait(0.1)
    game .Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(968.80957, 125.092171, 33244.125)         
-   wait(10)
+   wait(5)
     elseif MyLevel == 1350 then
-   wait(0.10)
+   wait(0.1)
    game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
    wait(0.1)
    game .Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5667.6582, 26.7997818, -6486.08984, -0.933587909, 0, -0.358349502, 0, 1, 0, 0.358349502, 0, -0.933587909)
-   wait(10)
+   wait(5)
     elseif MyLevel == 1425 then
-   wait(0.10)
+   wait(0.1)
    game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
    wait(0.1)
    game .Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3054.44458, 235.544281, -10142.8193, 0.990270376, -0, -0.13915664, 0, 1, -0, 0.13915664, 0, 0.990270376)
-   wait(10)
+   wait(5)
            end
       end
  end
@@ -3706,6 +3705,7 @@ function AttackNoCD()
                 u8 = math.floor(u12 / u9)
                 u7 = u12 - u8 * u9
             end)()
+            wait(0.5)
             u10 = u10 + 1
             debug.setupvalue(AC.attack, 5, u8)
             debug.setupvalue(AC.attack, 6, u9)
@@ -3735,39 +3735,27 @@ while cac() do
 end
 
     end) 
-local CameraShaker = require(game.ReplicatedStorage.Util.CameraShaker)
-CombatFrameworkR = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework)
-y = debug.getupvalues(CombatFrameworkR)[2]
-spawn(function()
-    game:GetService("RunService").RenderStepped:Connect(function()
-        if _G.FastAttack then
-            if typeof(y) == "table" then
-                pcall(function()
-                    CameraShaker:Stop()
-                    y.activeController.timeToNextAttack = (math.huge^math.huge^math.huge)
-                    y.activeController.timeToNextAttack = 0
-                    y.activeController.hitboxMagnitude = 60
-                    y.activeController.active = false
-                    y.activeController.timeToNextBlock = 0
-                    y.activeController.focusStart = 1655503339.0980349
-                    y.activeController.increment = 1
-                    y.activeController.blocking = false
-                    y.activeController.attacking = false
-                    y.activeController.humanoid.AutoRotate = true
-                end)
-            end
-        end
-    end)
-end)
+local Module = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework)
+local CombatFramework = debug.getupvalues(Module)[2]
+local CameraShakerR = require(game.ReplicatedStorage.Util.CameraShaker)
 
 spawn(function()
-    game:GetService("RunService").RenderStepped:Connect(function()
-        if _G.FastAttack == true then
-            game.Players.LocalPlayer.Character.Stun.Value = 0
-            game.Players.LocalPlayer.Character.Humanoid.Sit = false
-            game.Players.LocalPlayer.Character.Busy.Value = false        
+    while true do
+        if _G.FastAttack then
+            pcall(function()
+                CameraShakerR:Stop()
+                CombatFramework.activeController.attacking = false
+                CombatFramework.activeController.timeToNextAttack = 0
+                CombatFramework.activeController.increment = 3
+                CombatFramework.activeController.hitboxMagnitude = 100
+                CombatFramework.activeController.blocking = false
+                CombatFramework.activeController.timeToNextBlock = 0
+                CombatFramework.activeController.focusStart = 0
+                CombatFramework.activeController.humanoid.AutoRotate = true
+            end)
         end
-    end)
+        task.wait()
+    end
 end)
     Settings:Toggle("remove attack",true,function(value)
     getgenv().A = require(game:GetService("ReplicatedStorage").CombatFramework.RigLib).wrapAttackAnimationAsync 
