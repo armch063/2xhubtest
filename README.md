@@ -2858,7 +2858,7 @@ spawn(function()
     end
 end)
 
-Setting:Toggle("Fast Attack",true,function(Fast)
+Settings:Toggle("Fast Attack",true,function(Fast)
     _G.FastAttack = Fast
 end)
 
