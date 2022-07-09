@@ -2474,6 +2474,7 @@ elseif MyLevel == 90 then
 local Library = Update:Window("2X","",Enum.KeyCode.RightControl);
 local Main3 = Library:Tab("Main")
 local Main = Library:Tab("Auto Itame")
+local Stats = Library:Tab("AutoStats")
 local Settings = Library:Tab("Settings")
 
 Main3:Toggle("Auto SetSpawn Point",true,function(x)
