@@ -2857,34 +2857,6 @@ spawn(function()
         end
     end
 end)
-    Settings:Toggle("Magnet",true,function(vu)
-    _G.MagnetActive = vu
-    end)
-
-function bring2()
-	local plr = game.Players.LocalPlayer
-	pcall(function()
-	for i, v in pairs(game.workspace.Enemies:GetChildren()) do
-		for k, x in pairs (game.workspace.Enemies:GetChildren()) do
-		if x.Name == Mon then
-			if v.Name == Mon then
-				x.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame
-				v.HumanoidRootPart.CanCollide = false
-				v.HumanoidRootPart.Size = Vector3.new(80,80,80)
-				sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", math.huge)
-			end
-		end
-		end
-	end
-	end)
-end
-spawn(function()
-	while wait(.1) do
-		if _G.MagnetActive then
-			bring2()
-		end
-    end
-end)
 
 Setting:Toggle("Fast Attack",true,function(Fast)
     _G.FastAttack = Fast
@@ -3046,7 +3018,7 @@ elseif _G.WhiteScreen == false then
 end
 end)
 
-Settings:Line()
+Settings:Title()
 
     Settings:Toggle("Skill Z",true,function(value)
         _G.SkillZ = value
