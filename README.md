@@ -1832,6 +1832,33 @@ end
             end
         end)
     end)
+    spawn(function()
+	game:GetService("RunService").Stepped:Connect(function()
+		if farm or AutoFarmBone or AutoFarmChest or FramBoss or KillAllBoss or _G.AutoNew or _G.AutoThird or _G.AutoSaber or _G.AutoPoleHOP or _G.AutoPole or _G.AutoRengoku or _G.AutoEvoRace2 or _G.AutoQuestBartilo or _G.AutoHakiRainbow or _G.AutoEliteHunter or _G.AutoYama or _G.HolyTorch then
+			if not KRNL_LOADED and game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
+				setfflag("HumanoidParallelRemoveNoPhysics", "False")
+				setfflag("HumanoidParallelRemoveNoPhysicsNoSimulate2", "False")
+				game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+			else
+				if not game:GetService("Workspace"):FindFirstChild("LOL") then
+					local LOL = Instance.new("Part")
+					LOL.Name = "LOL"
+					LOL.Parent = game.Workspace
+					LOL.Anchored = true
+					LOL.Transparency = 0.8
+					LOL.Size = Vector3.new(50,0.5,50)
+				elseif game:GetService("Workspace"):FindFirstChild("LOL") then
+					game.Workspace["LOL"].CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y - 3.8,game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z)
+				end
+			end
+			for _, v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+				if v:IsA("BasePart") then
+					v.CanCollide = false
+				end
+			end
+		end
+	end)
+end) 
 
 local Library = Update:Window("2XHUB","",Enum.KeyCode.RightControl);
 local Main3 = Library:Tab("Main2")
@@ -1952,3 +1979,40 @@ Main3:Toggle("AutoFarm Level",_G.AutoFarm,function(value)
             end
         end
     end)
+    
+Main3:Toggle("Bring Mob",true,function(Mag)
+    _G.BringMonster = Mag
+    end)
+    spawn(function()
+        while task.wait() do
+            pcall(function()
+                if _G.BringMonster then
+                    CheckQuest()
+                    for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
+                        if _G.AutoFarm and StartMagnet and v.Name == Mon and (Mon == "Factory Staff [Lv. 800]" or Mon == "Monkey [Lv. 14]" or Mon == "Dragon Crew Warrior [Lv. 1575]" or Mon == "Dragon Crew Archer [Lv. 1600]") and v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 and (v.HumanoidRootPart.Position - game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 220 then
+                            v.HumanoidRootPart.Size = Vector3.new(50,50,50)
+                            v.HumanoidRootPart.CFrame = PosMon
+                            v.Humanoid:ChangeState(14)
+                            v.HumanoidRootPart.CanCollide = false
+                            v.Head.CanCollide = false
+                            if v.Humanoid:FindFirstChild("Animator") then
+                                v.Humanoid.Animator:Destroy()
+                            end
+                            sethiddenproperty(game:GetService("Players").LocalPlayer,"SimulationRadius",math.huge)
+                        elseif _G.AutoFarm and StartMagnet and v.Name == Mon and v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 and (v.HumanoidRootPart.Position - game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 275 then
+                            v.HumanoidRootPart.Size = Vector3.new(50,50,50)
+                            v.HumanoidRootPart.CFrame = PosMon
+                            v.Humanoid:ChangeState(14)
+                            v.HumanoidRootPart.CanCollide = false
+                            v.Head.CanCollide = false
+                            if v.Humanoid:FindFirstChild("Animator") then
+                                v.Humanoid.Animator:Destroy()
+                            end
+                            sethiddenproperty(game:GetService("Players").LocalPlayer,"SimulationRadius",math.huge)
+                        end
+                    end
+                end
+            end)
+        end
+    end)
+
