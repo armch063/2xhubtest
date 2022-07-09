@@ -1201,16 +1201,16 @@ end
 
 -- Script
     if game.PlaceId == 2753915549 then
-        Old_World = true
+        World1 = true
     elseif game.PlaceId == 4442272183 then
-        New_World = true
+        World2 = true
     elseif game.PlaceId == 7449423635 then
-        Three_World = true
+        World3 = true
     end
     
     function CheckQuest() 
         MyLevel = game:GetService("Players").LocalPlayer.Data.Level.Value
-        if Old_World then
+        if World1 then
             if MyLevel == 1 or MyLevel <= 9 then
                 Mon = "Bandit [Lv. 5]"
                 LevelQuest = 1
@@ -1380,7 +1380,7 @@ end
                 NameMon = "Galley Captain"
                 CFrameQuest = CFrame.new(5259.81982, 37.3500175, 4050.0293, 0.087131381, 0, 0.996196866, 0, 1, 0, -0.996196866, 0, 0.087131381)
             end
-        elseif New_World then
+        elseif World2 then
             if MyLevel == 700 or MyLevel <= 724 then
                 Mon = "Raider [Lv. 700]"
                 LevelQuest = 1
@@ -1529,7 +1529,7 @@ end
                 NameMon = "Water Fighter"
                 CFrameQuest = CFrame.new(-3054.44458, 235.544281, -10142.8193, 0.990270376, -0, -0.13915664, 0, 1, -0, 0.13915664, 0, 0.990270376)
             end
-        elseif Three_World then
+        elseif World3 then
             if MyLevel == 1500 or MyLevel <= 1524 then
                 Mon = "Pirate Millionaire [Lv. 1500]"
                 LevelQuest = 1
@@ -2969,7 +2969,7 @@ Main3:Toggle("AutoFarm Level",_G.AutoFarm,function(value)
         end)
     end
     
-    Main:Title("ที่ใส่อาวุธสำหรับทำของ")
+    Main:Seperator("ที่ใส่อาวุธสำหรับทำของ")
         WeaponList = {}
     
     for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do  
@@ -2991,7 +2991,7 @@ Main3:Toggle("AutoFarm Level",_G.AutoFarm,function(value)
     
     
     
-    Main:Title("Fighting Style")
+    Main:Seperator("Fighting Style")
     
     Main:Toggle("Auto Superhuman",_G.AutoSuperhuman,function(value)
         _G.AutoSuperhuman = value
@@ -3241,7 +3241,7 @@ Main3:Toggle("AutoFarm Level",_G.AutoFarm,function(value)
         end
     end)
     
-   Main:Title("Mastery")
+   Main:Seperator("Mastery")
     
     Main:Toggle("Auto Farm BF Mastery",_G.AutoFarmFruitMastery,function(value)
         _G.AutoFarmFruitMastery = value
@@ -3588,7 +3588,7 @@ Main3:Toggle("AutoFarm Level",_G.AutoFarm,function(value)
         _G.Kill_At = value
     end)
     
-    Main:Title("Buddy Sword")
+    Main:Seperator("Buddy Sword")
     
     Main:Toggle("Auto Buddy Sword",_G.AutoBudySword,function(value)
         _G.AutoBudySword = value
@@ -3635,14 +3635,14 @@ Main3:Toggle("AutoFarm Level",_G.AutoFarm,function(value)
         end
     end)
     
-        Main:Title("Oder Sword (New !)")
+        Main:Seperator("Oder Sword")
     
-    Main:Toggle("Auto Oder Sword (New !)", _G.AutoOderSword,function(value)
+    Main:Toggle("Auto Oder Sword ", _G.AutoOderSword,function(value)
          _G.AutoOderSword = value
         StopTween( _G.AutoOderSword)
     end)
     
-    Main:Toggle("Auto Oder Sword Hop (New !)", _G.AutoOderSwordHop,function(value)
+    Main:Toggle("Auto Oder Sword Hop", _G.AutoOderSwordHop,function(value)
          _G.AutoOderSwordHop = value
     end)
     
@@ -3697,7 +3697,7 @@ end)
         end
     end)
     
-    Main:Title("Elite")
+    Main:Seperator("Elite")
     
     local EliteProgress = Main:Label("")
     
@@ -3775,7 +3775,7 @@ end)
         _G.AutoEliteHunterHop = value
     end)
     
-    Main:Title("Hallow Scythe")
+    Main:Seperator("Hallow Scythe")
     
     Main:Toggle("Auto Hallow Scythe",_G.AutoFarmBossHallow,function(value)
         _G.AutoFarmBossHallow = value
@@ -3822,7 +3822,7 @@ end)
         end
     end)
     
-    Main:Title("Dark Dagger")
+    Main:Seperator("Dark Dagger")
     
     Main:Toggle("Auto Kill Admin-Rip-Boss",_G.AutoDarkDagger,function(value)
         _G.AutoDarkDagger = value
@@ -3871,7 +3871,7 @@ end)
         end)
     end)
     
-    Main:Title("Swan Glasses")
+    Main:Seperator("Swan Glasses")
     
     Main:Toggle("Auto Swan Glasses",_G.AutoFarmSwanGlasses,function(value)
         _G.AutoFarmSwanGlasses = value
@@ -3923,7 +3923,7 @@ end)
         end)
     end)
     
-    Main:Title("Bone")
+    Main:Seperator("Bone")
     
     local BoneFarm = Main:Toggle("Auto Farm Bone",_G.Auto_Bone,function(value)
         _G.Auto_Bone = value
@@ -3994,7 +3994,7 @@ end)
     wait(1)
 end)
         
-        Main:Title("Candy")
+        Main:Seperator("Candy")
         
             Main:Toggle("Auto Farm Candy",_G.AutoFarmCandy,function(value)
         _G.AutoFarmCandy = value
@@ -4048,7 +4048,7 @@ end)
         end)
     end)
         
-    Main:Title("Observation")
+    Main:Seperator("Observation")
     
     local ObservationRange = Main:Label("")
     
@@ -4159,7 +4159,7 @@ end)
         end)
     end)
     
-    Main:Title("Saber")
+    Main:Seperator("Saber")
     
     Main:Toggle("Auto Saber",_G.AutoSaber,function(value)
         _G.AutoSaber = value
@@ -4208,7 +4208,7 @@ end)
         end
     end)
     
-    Main:Title("Legendary Sword")
+    Main:Seperator("Legendary Sword")
     
     Main:Toggle("Auto Legendary Sword",_G.AutoBuyLegendarySword,function(value)
         _G.AutoBuyLegendarySword = value
@@ -4272,7 +4272,7 @@ end)
         end
     end)
     
-    Main:Title("Other")
+    Main:Seperator("Other")
     
     Main:Toggle("Auto Musketeer Hat",_G.AutoMusketeerHat,function(value)
         _G.AutoMusketeerHat = value
@@ -5026,6 +5026,255 @@ end)
         end
     end)
 
+    
+        Stats:Seperator("Auto Stats")
+    
+    local Pointstat = Stats:Label("Stat Points")
+    
+    spawn(function()
+        while wait() do
+            pcall(function()
+                Pointstat:Set("Stat Points : "..tostring(game:GetService("Players")["LocalPlayer"].Data.Points.Value))
+            end)
+        end
+    end)
+    
+    Stats:Toggle("Auto Melee",_G.Auto_Melee,function(value)
+        _G.Auto_Melee = value
+    end)
+    
+    Stats:Toggle("Auto Defense",_G.Auto_Defense,function(value)
+        _G.Auto_Defense = value
+    end)
+    
+    Stats:Toggle("Auto Sword",_G.Auto_Sword,function(value)
+        _G.Auto_Sword = value
+    end)
+    
+    Stats:Toggle("Auto Gun",_G.Auto_Gun,function(value)
+        _G.Auto_Gun = value
+    end)
+    
+    Stats:Toggle("Auto Devil Fruits",_G.Auto_DevilFruit,function(value)
+        _G.Auto_DevilFruit = value
+    end)
+    
+    _G.PointStats = 1
+    Stats:Slider("Select Point",1,100,1,function(value)
+        _G.PointStats = value
+    end)
+    
+    spawn(function()
+        while wait() do
+            pcall(function()
+                if _G.Auto_Melee then
+                    if game:GetService("Players")["LocalPlayer"].Data.Points.Value ~= 0 then
+                        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AddPoint","Melee",_G.PointStats)
+                    end
+                end
+            end)
+        end
+    end)
+    
+    spawn(function()
+        while wait() do
+            pcall(function()
+                if _G.Auto_Defense then
+                    if game:GetService("Players")["LocalPlayer"].Data.Points.Value ~= 0 then
+                        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AddPoint","Defense",_G.PointStats)
+                    end
+                end
+            end)
+        end
+    end)
+    
+    spawn(function()
+        while wait() do
+            pcall(function()
+                if _G.Auto_Sword then
+                    if game:GetService("Players")["LocalPlayer"].Data.Points.Value ~= 0 then
+                        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AddPoint","Sword",_G.PointStats)
+                    end
+                end
+            end)
+        end
+    end)
+    
+    spawn(function()
+        while wait() do
+            pcall(function()
+                if _G.Auto_Gun then
+                    if game:GetService("Players")["LocalPlayer"].Data.Points.Value ~= 0 then
+                        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AddPoint","Gun",_G.PointStats)
+                    end
+                end
+            end)
+        end
+    end)
+    
+    spawn(function()
+        while wait() do
+            pcall(function()
+                if _G.Auto_DevilFruit then
+                    if game:GetService("Players")["LocalPlayer"].Data.Points.Value ~= 0 then
+                        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AddPoint","Devil Fruit",_G.PointStats)
+                    end
+                end
+            end)
+        end
+    end)
+    
+    Stats:Seperator("Status")
+    
+    local locallv = Stats:Label("Level")
+    
+    spawn(function()
+        while wait() do
+            pcall(function()
+                locallv:Set("Level :".." "..game:GetService("Players").LocalPlayer.Data.Level.Value)
+            end)
+        end
+    end)
+    
+    local localrace = Stats:Label("Race")
+    
+    spawn(function()
+        while wait() do
+            pcall(function()
+                localrace:Set("Race :".." "..game:GetService("Players").LocalPlayer.Data.Race.Value)
+            end)
+        end
+    end)
+    
+    local localbeli = Stats:Label("Beli")
+    
+    spawn(function()
+        while wait() do
+            pcall(function()
+                localbeli:Set("Beli :".." "..game:GetService("Players").LocalPlayer.Data.Beli.Value)
+            end)
+        end
+    end)
+    
+    local localfrag = Stats:Label("Fragment")
+    
+    spawn(function()
+        while wait() do
+            pcall(function()
+                localfrag:Set("Fragments :".." "..game:GetService("Players").LocalPlayer.Data.Fragments.Value)
+            end)
+        end
+    end)
+    
+    
+    local localexp = Stats:Label("ExP")
+    
+    spawn(function()
+        while wait() do
+            pcall(function()
+                localexp:Set("ExP Points :".." "..game:GetService("Players").LocalPlayer.Data.Exp.Value)
+            end)
+        end
+    end)
+    
+    local localstat = Stats:Label("Stats Points")
+    
+    spawn(function()
+        while wait() do
+            pcall(function()
+                localstat:Set("Stats Points :".." "..game:GetService("Players").LocalPlayer.Data.Points.Value)
+            end)
+        end
+    end)
+    
+    local localbountyhornor = Stats:Label("Bounty")
+    
+    spawn(function()
+        while wait() do
+            pcall(function()
+                localbountyhornor:Set("Bounty / Honor :".." "..game:GetService("Players").LocalPlayer.leaderstats["Bounty/Honor"].Value)
+            end)
+        end
+    end)
+    
+    local localDevil = Stats:Label("Devil Fruit")
+    
+    spawn(function()
+        while wait() do
+            pcall(function()
+                if game:GetService("Players").LocalPlayer.Character:FindFirstChild(game:GetService("Players").LocalPlayer.Data.DevilFruit.Value) or game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(game:GetService("Players").LocalPlayer.Data.DevilFruit.Value) then
+                    localDevil:Set("Devil Fruit :".." "..game:GetService("Players").LocalPlayer.Data.DevilFruit.Value)
+                else
+                    localDevil:Set("Not Have Devil Fruit")
+                end
+            end)
+        end
+    end)
+    
+    Stats:Seperator("Fake")
+    
+    Stats:Textbox("Enabled Fake",_G.EnabledStat,function(value)
+        _G.EnabledStat = value
+    end)
+    
+    Stats:Textbox("Level","",true,function(value)
+        if _G.EnabledStat then
+            game:GetService("Players")["LocalPlayer"].Data.Level.Value = tonumber(value)
+        end
+    end)
+    
+    Stats:Textbox("Exp ","",true,function(value)
+        if _G.EnabledStat then
+            game:GetService("Players")["LocalPlayer"].Data.Exp.Value = tonumber(value)
+        end
+    end)
+    
+    Stats:Textbox("Beli","",true,function(value)
+        if _G.EnabledStat then
+            game:GetService("Players")["LocalPlayer"].Data.Beli.Value = tonumber(value)
+        end
+    end)
+    
+    Stats:Textbox("Fragments","",true,function(value)
+        if _G.EnabledStat then
+            game:GetService("Players")["Localplayer"].Data.Fragments.Value = tonumber(value)
+        end
+    end)
+    
+    Stats:Textbox("Melee","",true,function(value)
+        if _G.EnabledStat then
+            game:GetService("Players")["LocalPlayer"].Data.Stats.Melee.Level.Value = tonumber(value)
+        end
+    end)
+    
+    Stats:Textbox("Defense","",true,function(value)
+        if _G.EnabledStat then
+            game:GetService("Players")["LocalPlayer"].Data.Stats.Defense.Level.Value = tonumber(value)
+        end
+    end)
+    
+    Stats:Textbox("Sword","",true,function(value)
+        if _G.EnabledStat then
+            game:GetService("Players")["LocalPlayer"].Data.Stats.Sword.Level.Value = tonumber(value)
+        end
+    end)
+    
+    Stats:Textbox("Gun","",true,function(value)
+        if _G.EnabledStat then
+            game:GetService("Players")["LocalPlayer"].Data.Stats.Gun.Level.Value = tonumber(value)
+        end
+    end)
+    Stats:Textbox("Fruit","",true,function(value)
+        if _G.EnabledStat then
+            game:GetService("Players")["LocalPlayer"].Data.Stats["Demon Fruit"].Level.Value = tonumber(value)
+        end
+    end)
+    
+    Stats:Textbox("Bounty","",true,function(value)
+        if _G.EnabledStat then
+            game:GetService("Players")["LocalPlayer"].leaderstats["Bounty/Honor"].Value = tonumber(value)
+        end
+    end)
     
 
 Settings:Toggle("Bring Mob",true,function(Mag)
