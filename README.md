@@ -6003,7 +6003,7 @@ end)
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","Slingshot","2")
     end)
 
-    Dungeon:Line()
+    
     
     local TimeRaid = Dungeon:Label("Wait For Dungeon")
     
