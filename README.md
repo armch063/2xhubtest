@@ -2477,6 +2477,7 @@ local Main = Library:Tab("Auto Itame")
 local Stats = Library:Tab("AutoStats")
 local Combat = Library:Tab("Combat")
 local Teleport = Library:Tab("Teleport")
+local Shop = Library:Tab("Shop")
 local Settings = Library:Tab("Settings")
 
 Main3:Toggle("Auto SetSpawn Point",true,function(x)
@@ -5864,6 +5865,143 @@ end)
     end)
     
     
+    Shop:Seperator("Abilities")
+    
+    Shop:Button("Buy Geppo",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Geppo")
+    end)
+    
+    Shop:Button("Buy Buso Haki",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Buso")
+    end)
+    
+    Shop:Button("Buy Soru",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Soru")
+    end)
+    
+    Shop:Button("Buy Observation(Ken) Haki",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("KenTalk","Buy")
+    end)
+    
+    Shop:Seperator("Fighting Style")
+    
+    Shop:Button("Buy Black Leg",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyBlackLeg")
+    end)
+    
+    Shop:Button("Buy Electro",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyElectro")
+    end)
+    
+    Shop:Button("Buy Fishman Karate",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyFishmanKarate")
+    end)
+    
+    Shop:Button("Buy Dragon Claw",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","DragonClaw","1")
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","DragonClaw","2")
+    end)
+    
+    Shop:Button("Buy Superhuman",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySuperhuman")
+    end)
+    
+    Shop:Button("Buy Death Step",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyDeathStep")
+    end)
+    
+    Shop:Button("Buy Sharkman Karate",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySharkmanKarate",true)
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySharkmanKarate")
+    end)
+    
+    Shop:Button("Buy Electric Claw",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyElectricClaw")
+    end)
+    
+    Shop:Button("Buy Dragon Talon",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyDragonTalon")
+    end)
+    -----Shop----------------
+    Shop:Seperator("Accessory")
+    
+    Shop:Button("Tomoe Ring",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyItem","Tomoe Ring")
+    end)
+    
+    Shop:Button("Black Cape",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyItem","Black Cape")
+    end)
+    
+    Shop:Button("Swordsman Hat",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyItem","Swordsman Hat")
+    end)
+    
+    Shop:Seperator("Sword")
+    
+    Shop:Button("Cutlass",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyItem","Cutlass")
+    end)
+    
+    Shop:Button("Katana",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyItem","Katana")
+    end)
+    
+    Shop:Button("Iron Mace",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyItem","Iron Mace")
+    end)
+    
+    Shop:Button("Duel Katana",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyItem","Duel Katana")
+    end)
+    
+    Shop:Button("Triple Katana", function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyItem","Triple Katana")
+    end)
+    
+    Shop:Button("Pipe",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyItem","Pipe")
+    end)
+    
+    Shop:Button("Dual Headed Blade",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyItem","Dual-Headed Blade")
+    end)
+    
+    Shop:Button("Bisento",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyItem","Bisento")
+    end)
+    
+    Shop:Button("Soul Cane",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyItem","Soul Cane")
+    end)
+    
+    Shop:Title("Gun")
+    
+    Shop:Button("Slingshot",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyItem","Slingshot")
+    end)
+    
+    Shop:Button("Musket",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyItem","Musket")
+    end)
+    
+    Shop:Button("Flintlock",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyItem","Flintlock")
+    end)
+    
+    Shop:Button("Refined Flintlock",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyItem","Refined Flintlock")
+    end)
+    
+    Shop:Button("Cannon",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyItem","Cannon")
+    end)
+    
+    Shop:Button("Kabucha",function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","Slingshot","1")
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","Slingshot","2")
+    end)
+
 Settings:Toggle("Bring Mob",true,function(Mag)
     _G.BringMonster = Mag
     end)
@@ -5899,6 +6037,7 @@ Settings:Toggle("Bring Mob",true,function(Mag)
             end)
         end
     end)
+
 
 Settings:Toggle("Auto Haki",true,function(value)
 _G.AUTOHAKI = value
