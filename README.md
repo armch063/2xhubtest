@@ -81,7 +81,7 @@ function Update:Window(text,logo,keybind)
 	Main.Position = UDim2.new(0.5, 0, 0.5, 0)
 	Main.Size = UDim2.new(0, 0, 0, 0)
 	
-	Main:TweenSize(UDim2.new(0, 656, 0, 350),"Out","Quad",0.4,true)
+	Main:TweenSize(UDim2.new(0, 653, 0, 325),"Out","Quad",0.4,true)
 
 	local MCNR = Instance.new("UICorner")
 	MCNR.Name = "MCNR"
