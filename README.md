@@ -107,7 +107,7 @@ function Update:Window(text,logo,keybind)
 	Main.Position = UDim2.new(0.5, 0, 0.5, 0)
 	Main.Size = UDim2.new(0, 0, 0, 0)
 	
-	Main:TweenSize(UDim2.new(0, 656, 0, 400),"Out","Quad",0.4,true)
+	Main:TweenSize(UDim2.new(0, 565, 0, 300),"Out","Quad",0.4,true)
 
 	local MCNR = Instance.new("UICorner")
 	MCNR.Name = "MCNR"
@@ -1048,8 +1048,8 @@ end
 
 
 local Library = Update:Window("2X","",Enum.KeyCode.RightControl);
-local Main = Library:Tab("Main")
-local Main3 = Library:Tab("Main3")
+local Main3 = Library:Tab("Main")
+local Main = Library:Tab("Main3")
 
 
         Main3:AddLine("Line")
@@ -1078,11 +1078,11 @@ local Main3 = Library:Tab("Main3")
     Main3:AddToggle("toggle",_G.AutoFarmBoss,function(value)
 
     end)
-    Main:AddButton("Button",function()
+    Main3:AddButton("Button",function()
     	
     	end) 
     
     
-    Main:AddSeperator("Seperator")
+    Main3:AddSeperator("Seperator")
        
     
