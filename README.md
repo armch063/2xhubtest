@@ -81,7 +81,7 @@ function Update:Window(text,logo,keybind)
 	Main.Position = UDim2.new(0.5, 0, 0.5, 0)
 	Main.Size = UDim2.new(0, 0, 0, 0)
 	
-	Main:TweenSize(UDim2.new(0, 656, 0, 300),"Out","Quad",0.4,true)
+	Main:TweenSize(UDim2.new(0, 500, 0, 300),"Out","Quad",0.1,true)
 
 	local MCNR = Instance.new("UICorner")
 	MCNR.Name = "MCNR"
@@ -91,7 +91,7 @@ function Update:Window(text,logo,keybind)
 	Top.Name = "Top"
 	Top.Parent = Main
 	Top.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-	Top.Size = UDim2.new(0, 656, 0, 27)
+	Top.Size = UDim2.new(0, 500, 0, 27)
 
 	local TCNR = Instance.new("UICorner")
 	TCNR.Name = "TCNR"
@@ -144,7 +144,7 @@ function Update:Window(text,logo,keybind)
 	BindButton.TextSize = 11.000
 	
 	BindButton.MouseButton1Click:Connect(function ()
-		BindButton.Text = "[ ... ]"
+		BindButton.Text = "[ UI2XHUB ]"
 		local inputwait = game:GetService("UserInputService").InputBegan:wait()
 		local shiba = inputwait.KeyCode == Enum.KeyCode.Unknown and inputwait.UserInputType or inputwait.KeyCode
 
