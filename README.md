@@ -1,29 +1,3 @@
-    
-
-local ScreenGui = Instance.new("ScreenGui")
-local ImageButton = Instance.new("ImageButton")
-local UICorner = Instance.new("UICorner")
-
-ScreenGui.Parent = game.CoreGui
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-ImageButton.Parent = ScreenGui
-ImageButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-ImageButton.BorderSizePixel = 0
-ImageButton.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
-ImageButton.Size = UDim2.new(0, 50, 0, 50)
-ImageButton.Draggable = true
-ImageButton.Image = "http://www.roblox.com/asset/?id=9849581539"
-ImageButton.MouseButton1Down:connect(function()
-game.CoreGui:FindFirstChild("2XUi").Enabled = not game.CoreGui:FindFirstChild("2XUi").Enabled
-end)
---9849581539
----rbxassetid://10063029955
---game.CoreGui:FindFirstChild("2XUi").Enabled = not game.CoreGui:FindFirstChild("2XUi").Enabled
-
-
-UICorner.Parent = ImageButton
-
 do local GUI = game.CoreGui:FindFirstChild("2XUi");if GUI then GUI:Destroy();end;if _G.Color == nil then
        _G.Color = Color3.fromRGB(93,8,239)
    end 
@@ -107,7 +81,7 @@ function Update:Window(text,logo,keybind)
 	Main.Position = UDim2.new(0.5, 0, 0.5, 0)
 	Main.Size = UDim2.new(0, 0, 0, 0)
 	
-	Main:TweenSize(UDim2.new(0, 565, 0, 300),"Out","Quad",0.4,true)
+	Main:TweenSize(UDim2.new(0, 656, 0, 300),"Out","Quad",0.4,true)
 
 	local MCNR = Instance.new("UICorner")
 	MCNR.Name = "MCNR"
@@ -350,7 +324,7 @@ function Update:Window(text,logo,keybind)
 		end)
 		
 		local main = {}
-		function main:AddButton(text,callback)
+		function main:Button(text,callback)
 			local Button = Instance.new("Frame")
 			local UICorner = Instance.new("UICorner")
 			local TextBtn = Instance.new("TextButton")
@@ -414,7 +388,7 @@ function Update:Window(text,logo,keybind)
 				callback()
 			end)
 		end
-		function main:AddToggle(text,config,callback)
+		function main:Toggle(text,config,callback)
 			config = config or false
 			local toggled = config
 			local Toggle = Instance.new("Frame")
@@ -510,7 +484,7 @@ function Update:Window(text,logo,keybind)
 				pcall(callback,toggled)
 			end
 		end
-		function main:AddDropdown(text,option,callback)
+		function main:Dropdown(text,option,callback)
 			local isdropping = false
 			local Dropdown = Instance.new("Frame")
 			local UICorner = Instance.new("UICorner")
@@ -703,7 +677,7 @@ function Update:Window(text,logo,keybind)
 			return dropfunc
 		end
 
-		function main:AddSlider(text,min,max,set,callback)
+		function main:Slider(text,min,max,set,callback)
 			local Slider = Instance.new("Frame")
 			local slidercorner = Instance.new("UICorner")
 			local sliderr = Instance.new("Frame")
@@ -957,7 +931,7 @@ function Update:Window(text,logo,keybind)
 			UICorner.CornerRadius = UDim.new(0, 5)
 			UICorner.Parent = RealTextbox
 		end
-		function main:AddLabel(text)
+		function main:Label(text)
 			local Label = Instance.new("TextLabel")
 			local PaddingLabel = Instance.new("UIPadding")
 			local labelfunc = {}
@@ -983,7 +957,7 @@ function Update:Window(text,logo,keybind)
 			return labelfunc
 		end
 
-		function main:AddSeperator(text)
+		function main:Seperator(text)
 			local Seperator = Instance.new("Frame")
 			local Sep1 = Instance.new("Frame")
 			local Sep2 = Instance.new("TextLabel")
@@ -1021,7 +995,7 @@ function Update:Window(text,logo,keybind)
 			Sep3.Size = UDim2.new(0, 80, 0, 1)
 		end
 
-		function main:AddLine()
+		function main:Line()
 			local Linee = Instance.new("Frame")
 			local Line = Instance.new("Frame")
 			
@@ -1044,45 +1018,30 @@ function Update:Window(text,logo,keybind)
 	return uitab
 end
 
--- Script
+local Library = Update:Window("Test","",Enum.KeyCode.RightControl);
+local Test = Library:Tab("Test")
 
+Test:Toggle("Auto SetSpawn Point",true,function()
 
-local Library = Update:Window("2X","",Enum.KeyCode.RightControl);
-local Main3 = Library:Tab("Main")
-local Main = Library:Tab("Main3")
-
-
-        Main3:AddLine("Line")
-        local MobKilled = Main3:AddLabel("Killed")
+end)
+    WeaponList = {}
     
-    spawn(function()
-        while wait() do
-            pcall(function()
-                if string.len(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner")) == 88 then
-                    MobKilled:Set("Defeat : "..string.sub(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"),39,41))
-                elseif string.len(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner")) == 87 then
-                    MobKilled:Set("Defeat : "..string.sub(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"),39,40))
-                elseif string.len(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner")) == 86 then
-                    MobKilled:Set("Defeat : "..string.sub(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"),39,39))
-                else
-                    MobKilled:Set("Boss Is Spawning")
-                end
-            end)
+    for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do  
+        if v:IsA("Tool") then
+            table.insert(WeaponList ,v.Name)
+        end
+    end
+    
+    local SelectWeapona = Test:Dropdown("Select Weapon",WeaponList,function(value)
+        _G.SelectWeapon = value
+    end)
+    
+    Test:Button("Refresh Weapon",function()
+        SelectWeapona:Clear()
+        for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do  
+            SelectWeapona:Add(v.Name)
         end
     end)
-    
-    
-    local BossName = Main3:AddDropdown("Select Boss",1,2,3,function(value)
-    end)
-
-    Main3:AddToggle("toggle",_G.AutoFarmBoss,function(value)
-
-    end)
-    Main3:AddButton("Button",function()
-    	
-    	end) 
-    
-    
-    Main3:AddSeperator("Seperator")
-       
-    
+   
+   Test:Line("")
+   Test:Seperator("Seperator")
