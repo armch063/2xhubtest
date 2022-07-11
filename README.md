@@ -81,7 +81,7 @@ function Update:Window(text,logo,keybind)
 	Main.Position = UDim2.new(0.5, 0, 0.5, 0)
 	Main.Size = UDim2.new(0, 0, 0, 0)
 	
-	Main:TweenSize(UDim2.new(0, 500, 0, 300),"Out","Quad",0.1,true)
+	Main:TweenSize(UDim2.new(0, 606, 0, 300),"Out","Quad",0.1,true)
 
 	local MCNR = Instance.new("UICorner")
 	MCNR.Name = "MCNR"
@@ -91,7 +91,7 @@ function Update:Window(text,logo,keybind)
 	Top.Name = "Top"
 	Top.Parent = Main
 	Top.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-	Top.Size = UDim2.new(0, 500, 0, 27)
+	Top.Size = UDim2.new(0, 606, 0, 27)
 
 	local TCNR = Instance.new("UICorner")
 	TCNR.Name = "TCNR"
@@ -232,7 +232,7 @@ function Update:Window(text,logo,keybind)
 				Main:TweenSize(UDim2.new(0, 0, 0, 0),"In","Quad",0.4,true)
 			else
 				uihide = false
-				Main:TweenSize(UDim2.new(0, 656, 0, 400),"Out","Quad",0.4,true)
+				Main:TweenSize(UDim2.new(0, 606, 0, 300),"Out","Quad",0.4,true)
 			end
 		end
 	end)
